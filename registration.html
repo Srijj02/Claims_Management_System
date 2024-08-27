@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <h1>Registration Page</h1>
+    <form id="form">
+        <h3>Registration</h3>
+
+        <label for="fullName">FullName</label>
+        <input type="text" name="fullName" id="fullName">
+
+        <label for="emailId">Email_ID</label>
+        <input type="email" name="emailId" id="emailId">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+
+        <label for="userRole">Role</label>
+        <select name="userRole" id="userRole">
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+
+        <div id="msg"></div>
+
+        <button type="submit" id="registrationBtn">Register</button>
+    </form>
+    <script src="registration.js"></script>
+</body>
+</html>

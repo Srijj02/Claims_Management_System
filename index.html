@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Claims Management System</h1>
+    <button onclick="openOverLay(event)" id="newBtn">Add New</button>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>BillNumber</th>
+                <th>CustomerId</th>
+                <th>BillDate</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>PaymentDueDate</th>
+                <th>PaymentMethod</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody id="body">
+            <tr>
+                <td>1</td>
+                <td>10897</td>
+                <td>101</td>
+                <td>2024-05-09</td>
+                <td>2000</td>
+                <td>Pending</td>
+                <td>2024-05-20</td>
+                <td>Online</td>
+                <td><button id="editBtn"><i class="fa-regular fa-pen-to-square"></i></button><button id="delBtn"><i
+                            class="fa-regular fa-trash-can"></i></button></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <div id="overlay">
+        <div id="form">
+            <form action="">
+                <div id="formHead">
+                    <h3>Details</h3>
+                    <span onclick="closeOverLay(event)" id="close">&times;</span>
+                </div>
+
+                <div id="formBody">
+
+                    <div>
+                        <label for="bill_number">BillNumber</label>
+                        <br>
+                        <input type="text" id="bill_number">
+                    </div>
+
+                    <div>
+                        <label for="customer_id">CustomerId</label>
+                        <br>
+                        <input type="text" id="customer_id">
+
+                    </div>
+
+                    <div>
+                        <label for="bill_date">BillDate</label>
+                        <br>
+                        <input type="date" id="bill_date">
+
+                    </div>
+
+                    <div>
+                        <label for="amount">Amount</label>
+                        <br>
+                        <input type="text" id="amount">
+                    </div>
+
+                    <div>
+                        <label for="status">Status</label>
+                        <br>
+                        <input type="text" id="status">
+
+                    </div>
+
+                    <div>
+                        <label for="payment_due_date">PaymentDueDate</label>
+                        <br>
+                        <input type="date" id="payment_due_date">
+                    </div>
+
+                    <div>
+                        <label for="payment_method">PaymentMethod</label>
+                        <br>
+                        <input type="text" id="payment_method">
+                    </div>
+                    <div id="msg"></div>
+                    <button id="addBtn">ADD</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- id, bill_number, customer_id, bill_date, amount, status, payment_due_date, payment_method -->

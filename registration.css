@@ -1,0 +1,39 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(223, 220, 220);
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    background-color: rgb(179, 177, 177);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#fullName, #emailId, #password, #userRole {
+    height: 25px;
+    width: 200px;
+    border-radius: 9px;
+}
+
+#registrationBtn {
+    width: 70px;
+    height: 30px;
+    position: relative;
+    left: 65%;
+    top: 20%;
+    border-radius: 5px;
+    background-color: rgb(29, 133, 252);
+    border: none;
+}
+
+#registrationBtn:hover {
+    cursor: pointer;
+    background-color: rgb(85, 160, 247);
+}

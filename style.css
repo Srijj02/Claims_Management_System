@@ -1,0 +1,140 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+table {
+    border: 2px solid black;
+    width: 100%
+}
+
+td,th {
+    text-align: left;
+    padding: 5px;
+}
+
+#form {
+    width: 400px;
+    height: 550px;
+    background-color: #76c1d4;
+    position :fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 9px;
+}
+
+#formBody {
+    display: grid;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#formHead {
+    display: flex;
+    justify-content: space-around;
+}
+
+#bill_number, #customer_id, #bill_date, #amount, #status, #payment_due_date, #payment_method {
+    width: 250px;
+    border-radius: 5px;
+}
+
+#close {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    background-color: aliceblue;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#close:hover {
+    cursor: pointer;
+}
+
+#overlay {
+    background-color: rgb(102, 100, 100, 0.7);
+    position: fixed;
+    left:0%;
+    bottom:0%;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+th {
+    background-color: #802e44;
+    color: white;
+}
+
+#editBtn {
+    background-color: #3ea8a5;
+    padding: 5px;
+    width: 70px;
+    height: 30px;
+    border-radius: 9px;
+    border: none;
+}
+
+#delBtn {
+    background-color: #ee4f1e;
+    padding: 5px;
+    width: 70px;
+    height: 30px;
+    border-radius: 9px;
+    border: none;
+}
+
+#editBtn:hover {
+    cursor: pointer;
+    background-color: #8fbebd;
+}
+
+#delBtn:hover {
+    cursor: pointer;
+    background-color: #ec744f;
+}
+
+#newBtn {
+    background-color: #45a05f;
+    padding: 5px;
+    width: 90px;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+}
+
+#newBtn:hover {
+    background-color: #9dbea7;
+    cursor: pointer;
+}
+
+#addBtn {
+    width: 90px;
+    height: 40px;
+    padding: 5px;
+    position: relative;
+    left: 80%;
+    top: 10%;
+    background-color: #1561ad;
+    border-radius: 5px;
+    border: none;
+}
+
+#addBtn:hover {
+    cursor: pointer;
+    background-color: #4f85bb;
+}
+
+
+
+
+
+
+

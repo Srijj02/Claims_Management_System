@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="users.css">
+</head>
+
+<body>
+    <h1>Users</h1>
+    <button onclick="openOverLay()" id="addNew">ADD NEW</button>
+    <table id="usersTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>FullName</th>
+                <th>UserName</th>
+                <!-- <th>UserPassword</th> -->
+                <th>UserRole</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody id="body">
+            <tr>
+                <td>1</td>
+                <td>Srija</td>
+                <td>srija@gamil.com</td>
+                <td>1234</td>
+                <td>Admin</td>
+                <td><button id="editBtn"><i class="fa-regular fa-pen-to-square"></i></button><button id="delBtn"><i
+                            class="fa-regular fa-trash-can"></i></button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="overlay">
+        <form id="form" action="">
+            <div id="formHead">
+                <h3>Details</h3>
+                <span id="close"><big onclick="closeOverLay()">&times;</big></span>
+            </div>
+            <label for="fullName">FullName</label>
+
+            <input type="text" name="fullName" id="fullName">
+
+            <label for="userName">UserName</label>
+            <input type="text" name="userName" id="userName">
+
+            <label for="userPassword">UserPassword</label>
+            <input type="text" name="userPassword" id="userPassword">
+
+            <label for="userRole">UserRole</label>
+            <select name="userRole" id="userRole">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <div id="msg"></div>
+
+            <button id="addBtn" type="submit">ADD</button>
+        </form>
+    </div>
+    <script src="users.js"></script>
+</body>
+
+</html>
+
+<!-- 
+CREATE TABLE users_table(id INT AUTO_INCREMENT PRIMARY KEY,
+fullName VARCHAR(30), userName VARCHAR(30), userPassword VARCHAR(200),userRole VARCHAR(30));
+ -->
